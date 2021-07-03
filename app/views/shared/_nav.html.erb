@@ -5,10 +5,10 @@
         <li class="nav-item">
           <a class="nav-link active fs-4 text-light" aria-current="page" href="/">All Posts</a>
         </li>
+        <% if user_signed_in? %>
         <li class="nav-item">
           <a class="nav-link text-light fs-4" href="/posts/new">New Post</a>
         </li>
-        <% if user_signed_in? %>
         <li class="nav-item">
             <%= link_to current_user.email, edit_user_registration_path, class: "nav-link text-light fs-4" %>
         </li>
