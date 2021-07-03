@@ -2,10 +2,9 @@
 
 # MEMBERS_ONLY
 
-> Built an exclusive clubhouse where members can write anonymous posts. Inside the clubhouse, members can see who the author of a post is but, outside, they can only see the post.
+> Built an exclusive clubhouse where members can write  posts. Inside the clubhouse, members can see who the author of a post is but, outside, they can only see the post.
 
 ## live demo
-[heroku live](https://priscillamicroreddit.herokuapp.com/)
 
 ## Built With
 
