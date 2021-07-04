@@ -7,10 +7,12 @@
     <tr>
       <th scope="col">Title</th>
       <th scope="col">Body</th>
-      <th scope="col">Show</th>
+      <% if user_signed_in? %>
+      <th scope="col">Comment</th>
       <th scope="col">User</th>
       <th scope="col">Edit</th>
       <th scope="col">Destroy</th>
+      <% end %>
     </tr>
   </thead>
 
@@ -19,8 +21,8 @@
       <tr>
         <td><%= post.title %></td>
         <td><%= post.body %></td>
-        <td><%= link_to 'Show', post %></td>
         <% if user_signed_in? %>
+        <td><%= link_to 'Comment', post %></td>
         <td><%= post.user_id %></td>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
